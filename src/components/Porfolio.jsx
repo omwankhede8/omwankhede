@@ -117,37 +117,6 @@ const Porfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className=" bg-zinc-100 dark:bg-gray-950 card-body">
-                <h2 className=" text-slate-900 dark:text-white card-title">
-                  Shoes!
-                </h2>
-                <p className="text-slate-500 dark:text-white">
-                  If a dog chews shoes whose shoes does he choose?
-                </p>
-                <div>
-                  <li className="flex items-center justify-evenly">
-                    {/* //Technologies used */}
-                    <ul>{react}</ul>
-                    <ul>{redux}</ul>
-                    <ul>{javascript}</ul>
-                    <ul>{tailwind}</ul>
-                    {/* //Technologies used */}
-                  </li>
-                </div>
-                <div className="card-actions justify-end">
-                  <button className=" text-slate-900 dark:text-white btn btn-primary">
-                    Visit
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
