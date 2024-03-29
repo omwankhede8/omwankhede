@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
 
-const Porfolio = () => {
+const Portfolio = () => {
   //icons
   const tailwind = (
     <svg
@@ -72,47 +72,45 @@ const Porfolio = () => {
     </svg>
   );
   //icons
+
   return (
     <>
       <Navbar />
-      <div className=" bg-white dark:bg-slate-800 min-h-screen  snap-mandatory snap-y scroll-smooth snap-center pl-60 pr-60 ">
-        <h1 className="text-slate-900 dark:text-white text-4xl  pt-4">
+      <div className="bg-white dark:bg-slate-800 min-h-screen snap-mandatory snap-y scroll-smooth snap-center pl-4 pr-4 sm:pl-60 sm:pr-60">
+        <h1 className="text-slate-900 dark:text-white text-4xl pt-4">
           --Portfolio
         </h1>
         <div>
-          <h2 className=" text-slate-900 dark:text-white tracking-wider  text-3xl border-2 border-white my-20 py-4 px-4 rounded-lg">
+          <h2 className="text-slate-900 dark:text-white tracking-wider text-3xl border-2 border-white my-8 sm:my-20 py-4 px-4 rounded-lg">
             Designed with figma and developed with react and tailwind CSS
           </h2>
           <div className="flex justify-evenly">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact sm:w-96 bg-base-100 shadow-xl">
               <figure>
                 <img src="/Trendify.png" alt="Trendify Website" />
               </figure>
-              <div className=" bg-zinc-100 dark:bg-gray-950 card-body ">
-                <h2 className=" text-slate-900 dark:text-white card-title">
+              <div className="bg-zinc-100 dark:bg-gray-950 card-body p-4">
+                <h2 className="text-slate-900 dark:text-white card-title">
                   Trendify!
                 </h2>
                 <h3 className="text-slate-500 dark:text-white">
                   Trendify: Stay Ahead of the Curve
                 </h3>
                 <div>
-                  <li className="flex items-center justify-evenly">
-                    {/* //Technologies used */}
-                    <ul>{react}</ul>
-                    <ul>{redux}</ul>
-                    <ul>{javascript}</ul>
-                    <ul>{tailwind}</ul>
-                    {/* //Technologies used */}
-                  </li>
+                  <ul className="flex items-center justify-evenly py-4">
+                    <li>{react}</li>
+                    <li>{redux}</li>
+                    <li>{javascript}</li>
+                    <li>{tailwind}</li>
+                  </ul>
                 </div>
-                <div className="card-actions justify-end">
+                <div className="text-right pb-4">
                   <a
                     href="https://trendifyecommerce.netlify.app"
                     target="_blank"
+                    className="text-slate-900 dark:text-white btn btn-primary"
                   >
-                    <button className=" text-slate-900 dark:text-white btn btn-primary">
-                      Visit
-                    </button>
+                    Visit
                   </a>
                 </div>
               </div>
@@ -125,4 +123,4 @@ const Porfolio = () => {
   );
 };
 
-export default Porfolio;
+export default Portfolio;
