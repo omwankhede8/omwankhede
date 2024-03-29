@@ -8,16 +8,18 @@ const Home = () => {
     <>
       <Navbar />
       <div className="bg-white dark:bg-slate-800 min-h-screen snap-mandatory snap-y scroll-smooth snap-center">
-        <div className="ml-4 md:ml-60 mr-4 md:mr-64 pt-16 md:pt-[13rem]">
-          <h1 className="text-slate-900 dark:text-white text-5xl font-normal tracking-wider">
+        <div className="ml-4 md:ml-60 mr-4 md:mr-64 pt-16 md:pt-[13rem] sm:pt-24">
+          {" "}
+          {/* Adjusted padding for small screens */}
+          <h1 className="text-slate-900 dark:text-white text-4xl md:text-5xl font-normal tracking-wider">
             Hello, My name is Om Wankhede
           </h1>
-          <h2 className="text-slate-900 dark:text-white text-3xl mt-4 md:w-2/4">
+          <h2 className="text-slate-900 dark:text-white text-2xl md:text-3xl mt-4 md:w-2/4">
             I am a UX Designer / Frontend Developer Based in India
           </h2>
           <Link
             to="/contact"
-            className="inline-block mt-8 px-6 py-3 text-slate-900 dark:text-white border-2 border-gray-300 rounded-xl text-lg hover:scale-110 hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-gray-300"
+            className="inline-block mt-8 px-4 md:px-6 py-3 text-slate-900 dark:text-white border-2 border-gray-300 rounded-xl text-base md:text-lg hover:scale-110 hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-gray-300"
           >
             Contact me
           </Link>
@@ -53,13 +55,13 @@ const Home = () => {
                 to="/portfolio"
                 className="px-6 py-3 text-slate-500 dark:text-white hover:scale-125 hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-gray-300 rounded-md flex items-center"
               >
-                Projects{" "}
-                <img src="/Down.png" alt="Down Arrow" className="ml-2 w-5" />
+                Projects <img src="/vite.svg" className="ml-2 w-5" />
               </Link>
             </button>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
