@@ -25,7 +25,7 @@ const Navbar = () => {
           style={{ position: "relative", textAlign: "center" }}
         >
           <button
-            className="text-red-600 dark:text-gray-300 focus:outline-none"
+            className="text-red-600 dark:text-gray-100 focus:outline-none"
             onClick={toggleMenu}
             style={{
               position: "absolute",
