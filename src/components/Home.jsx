@@ -15,7 +15,7 @@ const Home = () => {
             Hello, My name is Om Wankhede
           </h1>
           <h2 className="text-slate-900 dark:text-white text-2xl md:text-3xl mt-4 md:w-2/4">
-            I am a Full Stack Web Developer / UX Designer Based in India
+            I'm a React Developer / UX Designer Based in India
           </h2>
           <Link
             to="/contact"
